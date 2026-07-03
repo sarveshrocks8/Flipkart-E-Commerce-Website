@@ -16,7 +16,7 @@ const Container = styled(Box)`
     dispplay: flex;
 `
 
-const LoginButton = styled(Box)`
+const LoginButton = styled(Button)`
     color: #2874f0;
     background: #ffffff;
     text-transform: none;
