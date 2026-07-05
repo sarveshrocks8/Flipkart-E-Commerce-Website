@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Dialog, Box, TextField, Typography, Button, styled } from '@mui/material';
+import { authenticateSignup } from '../../service/app';
 
 
 const Component = styled(Box)`
@@ -102,8 +103,8 @@ const LoginDialog = ({ open, setOpen }) => {
         
     }
 
-    const signupUser = () =>{
-        
+    const signupUser = async() =>{
+        let response = await authenticateSignup(signup);
     }
 
     return (
